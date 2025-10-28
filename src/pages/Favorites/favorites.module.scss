@@ -1,0 +1,44 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.section {
+  margin: 40rem 0;
+}
+.list {
+  grid-template-columns: repeat(4, 280rem);
+  gap: 35rem;
+}
+.full {
+  margin: 40rem 0;
+}
+.inner {
+  gap: 40rem;
+}
+.empty {
+}
+.empty-inner {
+  min-height: calc(100vh - 300rem);
+  min-height: calc(100dvh - 300rem);
+  gap: 6rem;
+}
+.empty-text {
+  gap: 14rem;
+}
+
+.empty-desc {
+  color: #d6d5d5;
+  width: 700rem;
+}
+.empty-img {
+  width: 350rem;
+  height: 270rem;
+  // background: url(../../assets/img/emptyCartSvgBg.svg) no-repeat top/contain;
+  & img {
+    object-fit: contain;
+  }
+}
+.empty-back {
+  padding: 16rem 40rem;
+  background-color: $mint;
+  margin-top: 20rem;
+}

@@ -1,0 +1,61 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.item {
+  gap: 15rem;
+  min-height: 535rem;
+  &:hover {
+    & .img--show {
+      rotate: 2deg;
+    }
+    & .img--hide {
+      opacity: 1;
+      rotate: 2deg;
+      scale: 1;
+    }
+  }
+}
+.skeleton {
+  width: 100%;
+  height: 100%;
+  filter: blur(6rem);
+}
+.picture {
+  position: relative;
+  width: 280rem;
+  height: 325rem;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    top: 0;
+    content: '';
+    filter: blur(6rem);
+    background: $itemImgBg;
+    border-radius: 100rem 100rem 15rem 15rem;
+  }
+}
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s, scale 0.5s, rotate 0.5s;
+  transform-origin: center;
+  will-change: transform;
+  &--hide {
+    opacity: 0;
+    scale: 0.95;
+  }
+  &--show {
+    z-index: 5;
+  }
+}
+
+.content {
+  gap: 24rem;
+  flex-grow: 1;
+}
+.title {
+}
+

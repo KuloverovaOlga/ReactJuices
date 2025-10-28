@@ -1,0 +1,142 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.wrapper {
+  flex-grow: 1;
+  position: relative;
+}
+
+.label {
+  padding: 17rem 20rem;
+  background: rgba(249, 249, 249, 0.1);
+  background: $inputBg;
+  border-radius: 10rem;
+  cursor: pointer;
+
+  gap: 14rem;
+  flex-grow: 1;
+  position: relative;
+  &.isInput {
+    & .clear {
+      opacity: 0.5;
+      pointer-events: all;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+.svg {
+  width: 15rem;
+  height: 15rem;
+}
+.input {
+  flex-grow: 1;
+  &::placeholder {
+    color: #c0c0c0;
+  }
+}
+.clear {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  right: 12rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  &:hover {
+    opacity: 1;
+  }
+  & svg {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 4rem);
+  background: linear-gradient(180deg, #525252 0%, #003d3b 100%);
+
+  padding: 5rem 10rem 5rem 20rem;
+  // background: $inputBg;
+  border-radius: 10rem;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30rem);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  &.isOpen {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0rem);
+  }
+}
+
+.item {
+  border-bottom: 1rem solid $white;
+  padding: 18rem 0 5rem;
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.empty-item {
+  padding: 18rem 0;
+}
+
+.picture {
+  width: 57rem;
+  height: 66rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.bg {
+  width: 57rem;
+  height: 58rem;
+  position: absolute;
+  inset: 0;
+  // filter: blur(2rem);
+}
+.img {
+  width: 57rem;
+  height: 66rem;
+  position: absolute;
+  bottom: 13rem;
+  left: -2rem;
+  transform: rotate(-15deg);
+}
+
+.popup-info {
+  padding-bottom: 10rem;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+:global {
+  .search-list {
+    max-height: 269rem;
+    overflow: auto;
+    padding-right: 10rem;
+    &::-webkit-scrollbar {
+      width: 4rem;
+    }
+    &::-webkit-scrollbar-track {
+      background: $gray;
+      border-radius: 10rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $mint;
+      border-radius: 10rem;
+    }
+    &::-webkit-scrollbar-button {
+      display: none;
+      height: 0;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.block {
+  position: relative;
+margin-left: auto;
+  &:hover,
+  &.isOpen {
+    & .title::before {
+      scale: 1;
+    }
+  }
+  &.isOpen {
+    & .arr {
+      transform: rotate(0deg);
+    }
+    & .popup {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.head {
+  cursor: pointer;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 24rem;
+  height: 40rem;
+  //   width: 90rem;
+  gap: 12rem;
+
+  border-radius: 10rem;
+  font-size: 14rem;
+  position: relative;
+
+  border: 1rem solid #004d44;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background: $itemImgBg;
+    z-index: -1;
+    pointer-events: none;
+    transition: scale 0.3s;
+    border-radius: 10rem;
+    scale: 0;
+  }
+}
+.arr {
+  width: 10rem;
+  height: 6rem;
+  flex-shrink: 0;
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+
+  & svg path {
+    fill: $white;
+  }
+}
+.popup {
+  position: absolute;
+  z-index: 40;
+  right: 0;
+  bottom: calc(100% + 4rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.list {
+  padding: 13rem 0;
+  border-radius: 10rem;
+  box-shadow: 0 5rem 15rem 0 rgba(0, 0, 0, 0.09);
+  background: $gray;
+  width: fit-content;
+}
+.item {
+  padding: 12rem 34rem;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  white-space: nowrap;
+  &.isActive {
+    background: $lightMint;
+    color: $mint;
+    pointer-events: none;
+  }
+}

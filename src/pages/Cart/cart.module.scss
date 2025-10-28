@@ -1,0 +1,208 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.section {
+  margin: 40rem 0;
+}
+
+.full {
+  margin: 40rem 0;
+}
+.inner {
+  gap: 72rem;
+}
+.left {
+  width: 900rem;
+  flex-shrink: 0;
+
+  gap: 40rem;
+}
+.head {
+}
+.remove {
+  gap: 15rem;
+  &-svg {
+    width: 47rem;
+    height: 47rem;
+    transition: scale 0.5s;
+    will-change: transform;
+  }
+  &-text {
+    transition: color 0.5s;
+  }
+  &:hover {
+    & .remove-svg {
+      scale: 1.1;
+    }
+    & .remove-text {
+      color: $mint;
+    }
+  }
+}
+
+.list {
+}
+.right {
+  gap: 35rem;
+  flex-grow: 1;
+  position: sticky;
+  top: 50rem;
+  height: fit-content;
+}
+.back {
+  align-self: flex-end;
+  padding: 14rem 25rem;
+}
+.back-svg {
+  width: 8rem;
+  height: 14rem;
+}
+.info {
+  position: relative;
+  width: 235rem;
+  align-self: flex-end;
+  margin-right: -10rem;
+  &::before {
+    position: absolute;
+    top: 130rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20rem;
+    width: 80%;
+    content: '';
+    filter: blur(6rem);
+    background: $bottleBg;
+    border-radius: 10rem;
+  }
+}
+.order {
+  padding: 200rem 0 100rem;
+  position: absolute;
+  inset: 0;
+  width: 235rem;
+  z-index: 50;
+}
+.det {
+}
+.det-title {
+  font-weight: 400;
+  font-size: 48rem;
+}
+.det-desc {
+  font-weight: 600;
+  font-size: 13rem;
+  letter-spacing: 0.02em;
+}
+.det-count {
+  font-weight: 400;
+  font-size: 32rem;
+  letter-spacing: 0.01em;
+  color: $mint;
+  & sup {
+    font-size: 20rem;
+  }
+}
+.order-btn {
+  background: radial-gradient($mint, #ffffff);
+  border: none;
+  padding: 15rem;
+  border-radius: 10rem;
+  font-size: 13rem;
+  color: $black;
+  transition: scale 0.3s;
+  &:hover {
+    scale: 1.03;
+  }
+}
+.bottle {
+  width: 268rem;
+  width: 235rem;
+  height: 600rem;
+  position: relative;
+  z-index: 5;
+  & img {
+    object-fit: fill;
+  }
+}
+.wave-box {
+  width: 213rem;
+  height: 308rem;
+  position: absolute;
+  left: 50%;
+  bottom: 20rem;
+  transform: translateX(-50%);
+}
+.wave {
+  &--one {
+    animation: moveLeftRight 8s linear infinite;
+  }
+
+  &--two {
+    animation: moveRightLeft 7s linear infinite;
+  }
+}
+
+.empty {
+}
+.empty-inner {
+  min-height: calc(100vh - 300rem);
+  min-height: calc(100dvh - 300rem);
+  gap: 6rem;
+}
+.empty-text {
+  gap: 14rem;
+}
+
+.empty-desc {
+  color: #d6d5d5;
+  width: 700rem;
+}
+.empty-img {
+  width: 350rem;
+  height: 270rem;
+  // background: url(../../assets/img/emptyCartSvgBg.svg) no-repeat top/contain;
+  & img {
+    object-fit: contain;
+  }
+}
+.empty-back {
+  padding: 16rem 40rem;
+  background-color: $mint;
+  margin-top: 20rem;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0) translateY(-100rem);
+  }
+  25% {
+    transform: translateX(-50rem) translateY(-80rem);
+  }
+  50% {
+    transform: translateX(0) translateY(-60rem);
+  }
+  75% {
+    transform: translateX(50rem) translateY(-70rem);
+  }
+  100% {
+    transform: translateX(0) translateY(-100rem);
+  }
+}
+
+@keyframes moveRightLeft {
+  0% {
+    transform: translateX(0) translateY(-60rem);
+  }
+  25% {
+    transform: translateX(50rem) translateY(-30rem);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateX(-50rem) translateY(-20rem);
+  }
+  100% {
+    transform: translateX(0) translateY(-60rem);
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.logo {
+  gap: 4rem;
+}
+.image {
+  width: 80rem;
+  height: 80rem;
+}
+.info {
+  gap: 4rem;
+}
+.text {
+  font-weight: 800;
+  font-size: 24rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.desc {
+  color: $mint;
+}
+.isFooter {
+  text-align: right;
+  flex-direction: row-reverse;
+}

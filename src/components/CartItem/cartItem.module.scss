@@ -1,0 +1,57 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+.inner {
+  padding: 14rem 0;
+  border-top: 1rem solid $white;
+
+  &:last-of-type {
+    border-bottom: 01rem solid $white;
+  }
+}
+.content {
+  gap: 30rem;
+}
+.picture {
+  width: 136rem;
+  height: 166rem;
+  position: relative;
+}
+.bg {
+  width: 136rem;
+  height: 137rem;
+  position: absolute;
+  inset: 0;
+  filter: blur(2rem);
+}
+.img {
+  width: 136rem;
+  height: 156rem;
+  position: absolute;
+  inset: 0;
+  transform: rotate(-15deg);
+}
+.name {
+  gap: 10rem;
+  width: 240rem;
+}
+.title {
+}
+.desc {
+  color: $gray;
+}
+.info {
+  gap: 60rem;
+}
+.counter {
+  gap: 13rem;
+}
+.counter-btn,
+.remove {
+  width: 32rem;
+  height: 32rem;
+  transition: scale 0.5s;
+
+  &:hover {
+    scale: 1.08;
+  }
+}

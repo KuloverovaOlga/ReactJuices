@@ -1,0 +1,35 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.section {
+  margin: 40rem 0;
+}
+.inner {
+  min-height: calc(100vh - 300rem);
+  min-height: calc(100dvh - 300rem);
+  gap: 10rem;
+}
+.text {
+  gap: 6rem;
+}
+.title {
+  font-size: 70rem;
+  letter-spacing: 20rem;
+}
+.desc {
+  color: #d6d5d5;
+  width: 700rem;
+}
+.img {
+  width: 350rem;
+  height: 270rem;
+  // background: url(../../assets/img/emptyCartSvgBg.svg) no-repeat top/contain;
+  & img {
+    object-fit: fill;
+  }
+}
+.back {
+  padding: 16rem 40rem;
+  background-color: $mint;
+  margin-top: 20rem;
+}

@@ -1,0 +1,126 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.section {
+  margin: 40rem 0;
+  flex-grow: 1;
+  display: flex;
+
+  & .inner {
+    gap: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  & .wrap {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .info {
+    -webkit-mask-image: url(../../assets/img/mapMask.png);
+    mask-image: url(../../assets/img/mapMask.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    width: 470rem;
+    height: 330rem;
+    top: 50%;
+    left: 280rem;
+    transform: translateY(-50%);
+    padding: 20rem 40rem 60rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    position: absolute;
+    z-index: 5;
+    backdrop-filter: blur(5px);
+    // background: #0000007d;
+    background: URL(../../assets/img/maskBg.png) no-repeat top/contain;
+
+    z-index: 10;
+  }
+  & .row {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+  }
+  & .icon {
+    width: 50rem;
+    height: 50rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $mint;
+    & img {
+      width: 24rem;
+      height: 24rem;
+      object-fit: cover;
+    }
+  }
+
+  & .text {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  :global {
+    .leaflet-container {
+      min-height: 70vh;
+      z-index: 4;
+      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+      mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-composite: intersect; /* скрещиваем маски */
+      mask-composite: intersect;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      width: 100%;
+    }
+
+    .leaflet-tile-container {
+      filter: grayscale(100%) brightness(70%) contrast(90%);
+      //  filter: contrast(60%) grayscale(100%) invert(100%) brightness(60%)
+    }
+
+    .leaflet-top.leaflet-left {
+      top: 50% !important;
+
+      right: 10rem !important;
+      left: auto;
+      transform: translateY(-50%);
+      width: fit-content;
+    }
+
+    .leaflet-control-zoom {
+      margin: 0 !important;
+      right: 280rem !important;
+    }
+
+    .leaflet-pane .leaflet-marker-pane img {
+      width: 100rem !important;
+      height: 100rem !important;
+    }
+
+    .leaflet-touch .leaflet-bar a {
+      width: 30rem !important;
+      height: 30rem !important;
+      font-size: 22rem!important;
+      line-height: 100%!important;
+      display: flex!important;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

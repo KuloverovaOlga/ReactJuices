@@ -1,0 +1,76 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.section {
+  margin: 40rem 0;
+  max-width: 1920rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.inner {
+}
+
+.content {
+  margin: 0 auto;
+  width: 570rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+}
+.img {
+  width: 450rem;
+  height: 520rem;
+  z-index: 10;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.bg {
+  position: absolute;
+  right: 0;
+  bottom: -40rem;
+  width: 620rem;
+  filter: brightness(75%) contrast(80%);
+  top: -185rem;
+  border-radius: 0 0 0 200rem;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.svg {
+  width: 100rem;
+  height: 100rem;
+  & svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.stars {
+--percent: calc(var(--rating) / 5 * 100%);
+  
+  display: inline-block;
+  font-size: 20rem;
+  line-height: 100%;
+  
+  &::before {
+    content: '★★★★★';
+    letter-spacing: 3rem;
+    background: linear-gradient(90deg, $mint var(--percent), $white var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+
+

@@ -1,0 +1,66 @@
+
+
+.tl1 {
+  font-weight: 700;
+  font-size: 32rem;
+  letter-spacing: 0.01em;
+
+  @include small-tablet {
+  }
+}
+
+.tl2 {
+  font-weight: 700;
+  font-size: 20rem;
+  letter-spacing: 0.01em;
+
+  @include small-tablet {
+  }
+}
+.tl3 {
+  font-weight: 700;
+  font-size: 22rem;
+  letter-spacing: 0.01em;
+
+  @include small-tablet {
+  }
+}
+
+// --------------------------------------------------------------------------
+.txt18 {
+  font-weight: 400;
+  font-size: 18rem;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}
+.txt20 {
+  font-weight: 400;
+  font-size: 20rem;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}
+
+.txt16 {
+  font-weight: 700;
+  font-size: 16rem;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}
+
+.txt14 {
+  font-weight: 700;
+  font-size: 14rem;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}
+.txt13 {
+  font-weight: 700;
+  font-size: 13rem;
+  letter-spacing: 0.01em;
+  @include small-tablet {
+  }
+}

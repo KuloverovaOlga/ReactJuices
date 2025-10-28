@@ -1,0 +1,20 @@
+@import '../../scss/variables/colors.scss';
+@import '../../scss/variables/mixins.scss';
+
+.section {
+  margin: 40rem 0;
+}
+.inner {
+  gap: 40rem;
+}
+.nav {
+  gap: 10rem;
+}
+.list {
+  grid-template-columns: repeat(4, 280rem);
+  gap: 35rem;
+}
+
+.navigation {
+  
+}
