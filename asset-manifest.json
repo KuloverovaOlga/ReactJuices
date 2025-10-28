@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ReactJuices/static/css/main.133babf6.css",
+    "main.js": "/ReactJuices/static/js/main.7dd11186.js",
+    "static/media/logo.png": "/ReactJuices/static/media/logo.a9c98a5c309572b0ea7b.png",
+    "static/media/appleH.png": "/ReactJuices/static/media/appleH.4cd7f5b7746a3c237b40.png",
+    "static/media/emptyCartImg.svg": "/ReactJuices/static/media/emptyCartImg.e16c5414fa3466213671085a82a703bc.svg",
+    "static/media/Montserrat-ExtraBold.woff2": "/ReactJuices/static/media/Montserrat-ExtraBold.1d2e779a27a049a9c0be.woff2",
+    "static/media/Montserrat-Bold.woff2": "/ReactJuices/static/media/Montserrat-Bold.eb81ed2fdc175a2f3d42.woff2",
+    "static/media/Montserrat-SemiBold.woff2": "/ReactJuices/static/media/Montserrat-SemiBold.7b6ed9d21f1d610f0911.woff2",
+    "static/media/Montserrat-Regular.woff2": "/ReactJuices/static/media/Montserrat-Regular.608cc2621286f971ac40.woff2",
+    "static/media/bottle.png": "/ReactJuices/static/media/bottle.40944e9029206394b6bd.png",
+    "static/media/notFoundPage.svg": "/ReactJuices/static/media/notFoundPage.a63f24aeacdaf5742d19db2ad234dd12.svg",
+    "static/media/contacts_phone.svg": "/ReactJuices/static/media/contacts_phone.392c11f3340b879ca1401274e28b07ea.svg",
+    "static/media/contacts_mail.svg": "/ReactJuices/static/media/contacts_mail.943b2b8924963cdf14bde05a190e88d7.svg",
+    "static/media/cart.svg": "/ReactJuices/static/media/cart.d4304d9a9017c1423860db2df74b64aa.svg",
+    "static/media/loader.svg": "/ReactJuices/static/media/loader.3e7f6c719f7c2ac290a9fafdd4433ee1.svg",
+    "static/media/cartImgBg.svg": "/ReactJuices/static/media/cartImgBg.f4480911d5cf586e48eb7f36db9353bc.svg",
+    "static/media/remove.svg": "/ReactJuices/static/media/remove.4de4db039205d6b66378052ca785cb3d.svg",
+    "index.html": "/ReactJuices/index.html",
+    "static/media/contacts_place.svg": "/ReactJuices/static/media/contacts_place.ef557a7e2622282bb90405d6f8ec94f6.svg",
+    "static/media/plus.svg": "/ReactJuices/static/media/plus.bca2df61d9504ccd09757a8933102dd8.svg",
+    "static/media/searchImgBg.svg": "/ReactJuices/static/media/searchImgBg.c6a4624379a0771951c07718c7c6c4b7.svg",
+    "static/media/minus.svg": "/ReactJuices/static/media/minus.62bf2128653c134408950ad70c90c058.svg",
+    "main.133babf6.css.map": "/ReactJuices/static/css/main.133babf6.css.map",
+    "main.7dd11186.js.map": "/ReactJuices/static/js/main.7dd11186.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.133babf6.css",
+    "static/js/main.7dd11186.js"
+  ]
+}
