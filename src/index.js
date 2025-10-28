@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 
-import { BrowserRouter } from 'react-router';
+import { HashRouter } from 'react-router';
 import { AnimatePresence } from 'motion/react';
 
 import App from './components/App/App';
@@ -14,8 +14,8 @@ import App from './components/App/App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>{' '}
+    </HashRouter>
   </Provider>
 );
