@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactJuices/static/css/main.133babf6.css",
-    "main.js": "/ReactJuices/static/js/main.7dd11186.js",
+    "main.js": "/ReactJuices/static/js/main.0624d308.js",
     "static/media/logo.png": "/ReactJuices/static/media/logo.a9c98a5c309572b0ea7b.png",
     "static/media/appleH.png": "/ReactJuices/static/media/appleH.4cd7f5b7746a3c237b40.png",
     "static/media/emptyCartImg.svg": "/ReactJuices/static/media/emptyCartImg.e16c5414fa3466213671085a82a703bc.svg",
@@ -23,10 +23,10 @@
     "static/media/searchImgBg.svg": "/ReactJuices/static/media/searchImgBg.c6a4624379a0771951c07718c7c6c4b7.svg",
     "static/media/minus.svg": "/ReactJuices/static/media/minus.62bf2128653c134408950ad70c90c058.svg",
     "main.133babf6.css.map": "/ReactJuices/static/css/main.133babf6.css.map",
-    "main.7dd11186.js.map": "/ReactJuices/static/js/main.7dd11186.js.map"
+    "main.0624d308.js.map": "/ReactJuices/static/js/main.0624d308.js.map"
   },
   "entrypoints": [
     "static/css/main.133babf6.css",
-    "static/js/main.7dd11186.js"
+    "static/js/main.0624d308.js"
   ]
 }
